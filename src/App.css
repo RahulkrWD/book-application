@@ -134,3 +134,61 @@ body{
       padding: 0.5rem 1rem;
     }
   }
+
+  .book-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .book-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .book-cover {
+    max-height: 400px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .book-info {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  .description p {
+    line-height: 1.6;
+  }
+  
+  .authors ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .authors li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .subject-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag {
+    background: #f0f0f0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }

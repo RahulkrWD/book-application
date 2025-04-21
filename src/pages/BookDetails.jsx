@@ -1,30 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import Layout from "../components/Layout";
-// import { useParams } from "react-router-dom";
-// import { useSelector } from "react-redux";
-// import axios from "axios";
-
-// function BookDetails() {
-//   const { id } = useParams();
-//   const [data, setData] = useState({});
-//   async function bookDetails() {
-//     const response = await axios.get(
-//       `https://openlibrary.org/works/${id}.json`
-//     );
-//     console.log(response.data);
-//   }
-
-//   useEffect(() => {
-//     setData(bookDetails());
-//   }, [data]);
-//   return (
-//     <Layout>
-//       <h4>Book details</h4>
-//     </Layout>
-//   );
-// }
-
-// export default BookDetails;
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { useParams } from "react-router-dom";
